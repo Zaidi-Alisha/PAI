@@ -1,0 +1,42 @@
+def area_trapezoid():
+    print("Area of trapezoid")
+    a = int(input("What is the length of side 1?"))
+    b = int(input("What is the length of side 2?"))
+    h = int(input("What is the height?"))
+    area = ((a + b) / 2) * h
+    print(area)
+
+
+area_trapezoid()
+
+def area_parallelogram():
+    print("Area of parallelogram")
+    base = int(input("What is the base?"))
+    height = int(input("What is the height?"))
+    area = base * height
+    print(area)
+
+
+area_parallelogram()
+
+
+def area_cylinder():
+    print("Surface area of cylinder")
+    r = int(input("What is the radius?"))
+    h2 = int(input("What is the height?"))
+    area = (2 * 3.14 * r * h2) + 2 * 3.14 * r * r
+    print(area)
+
+
+area_cylinder()
+
+
+def volume_cylinder():
+    print("Volume of cylinder")
+    r1 = int(input("What is the radius?"))
+    h3 = int(input("What is the height?"))
+    volume = 3.14 * r1 * r1 * h3
+    print(volume)
+
+
+volume_cylinder()
