@@ -1,0 +1,5 @@
+Name: Alisha
+CNIC: 234567890
+Age: 18
+Salary: 234556
+Contact Number: 173846552454
