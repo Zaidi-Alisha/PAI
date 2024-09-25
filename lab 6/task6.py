@@ -1,13 +1,8 @@
-def save_question(sentence, question='questions.txt'):
-    try:
-        if sentence.strip().endswith('?'):
-            with open(question, 'a') as fileObj:
-                fileObj.write(sentence + '\n')
-            print("Question saved to ", question)
-        else:
-            print("The sentence is not a question.")
-    except Exception as e:
-        print("An error occurred: ", e)
+import pandas as pd
 
-sentence = input("Enter a question: ")
-save_question(sentence)
+df_alcohol = pd.read_csv(r'C:\Users\k230025\Desktop\task\Book1.csv')
+
+alcohol_consumption = df_alcohol[df_alcohol['Year'].isin([1987, 1989])]
+
+print(alcohol_consumption)
+
