@@ -1,12 +1,10 @@
+import pandas as pd
 import matplotlib.pyplot as plt
-# Sample data for sea level rise (year vs. height in mm)
-years = np.arange(1920, 2021)
-sea_levels = np.random.normal(loc=150, scale=10, size=len(years)).cumsum()  # Cumulative sum to simulate rise
+data = pd.read_csv('sea_level.csv')
 
-plt.figure(figsize=(10, 6))
-plt.scatter(years, sea_levels, color='blue', marker='o')
-plt.title('Sea Level Rise Over 100 Years')
+plt.scatter(data['Year'], data['Sea Level'], color='teal', label='Sea Level Rise')
 plt.xlabel('Year')
-plt.ylabel('Sea Level (mm)')
-plt.grid()
+plt.ylabel('Sea Level (in mm)')
+plt.title('Sea Level Rise Over the Past 100 Years')
+plt.legend()
 plt.show()
