@@ -1,19 +1,11 @@
 import matplotlib.pyplot as plt
-import pandas as pd
-df= pd.read_csv("iris.csv")
-x = df['sepal_length']
-y = df['petal_width']
 
-filtered_data = df[df['species'].isin(['setosa', 'versicolor'])]
-species_count = filtered_data['species'].value_counts()
-plt.figure(figsize=(8, 5))
-plt.bar(species_count.index, species_count.values, color=['green', 'yellow'])
-plt.title('Count of setosa and versicolor')
-plt.xlabel('species')
-plt.ylabel('Count')
-'''Rotatate axis'''
-plt.xticks(rotation=0)  
+math = [87, 78, 76, 77, 98, 76, 88, 89, 91, 92]
+science = [84, 88, 91, 77, 93, 74, 83, 78, 98, 93]
 
-plt.grid(axis='y')
-print("v:", species_count)
+plt.scatter(math, science, color='green')
+plt.xlabel('Mathematics Marks')
+plt.ylabel('Science Marks')
+plt.title('Mathematics and Science Marks')
+plt.legend()
 plt.show()
