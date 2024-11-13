@@ -31,7 +31,7 @@ best = [k for k, acc in zip(k_values, accuracies) if acc == maximum]
 worst = [k for k, acc in zip(k_values, accuracies) if acc == minimum]
 
 # Display the results
-print("Highest Accuracy:", max_accuracy)
+print("Highest Accuracy:", maximum)
 print("Best k value(s):", best)
-print("Lowest Accuracy:", min_accuracy)
+print("Lowest Accuracy:", minimum)
 print("Worst k value(s):", worst)
